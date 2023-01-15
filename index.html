@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src=""></script>
   </head>
   <body>
     <section class="landing">
@@ -22,12 +22,14 @@
           </figure>
 
           <div class="nav__links">
-              <a class="nav__link" href="">About</a>
-              <a class="nav__link" href="">Blog</a>
-              <a class="nav__link" href="">Pricing</a>
-              <a class="nav__link" href="">Contact Us</a>
-              <a class="nav__link nav__link--primary" href="">Login</a>
-              <a class="nav__link nav__link--signup" href=""><button>Sign Up</button></a>
+            <a class="nav__link" href="">About</a>
+            <a class="nav__link" href="">Blog</a>
+            <a class="nav__link" href="">Pricing</a>
+            <a class="nav__link" href="">Contact Us</a>
+            <a class="nav__link nav__link--primary" href="">Login</a>
+            <a class="nav__link nav__link--signup" href=""
+              ><button><strong>Sign Up</strong></button></a
+            >
           </div>
         </div>
       </nav>
@@ -42,14 +44,27 @@
               Our templates are easy to setup, understand and customize. Fully
               modular components with a variety of pages and components.
             </p>
-            <form class="header__form" action="">
-                <input type="email" placeholder="Your E-mail Address" >
-                <button>Get Started</button>
-            </form>
+
+            <div class="header__form">
+              <form class="form" action="">
+                <input
+                  class="input__email"
+                  type="email"
+                  placeholder="Your E-mail Address"
+                />
+                <button><strong>Get Started</strong></button>
+              </form>
+            </div>
+
             <div class="header__customer">
-            <p class="header__customer--para">OUR TRUSTED CUSTOMERS</p>
-            <figure></figure>
-            <img class="header__customer--img" src="./assets/customers.png" alt="">
+              <p class="header__customer--para">OUR TRUSTED CUSTOMERS</p>
+              <figure>
+                <img
+                  class="header__customer--img"
+                  src="./assets/customers.png"
+                  alt=""
+                />
+              </figure>
             </div>
           </div>
 
@@ -59,5 +74,299 @@
         </div>
       </header>
     </section>
+
+    <section id="features">
+      <div class="row">
+        <div class="features__container">
+          <p class="title--header">
+            <span class="purple">FEATURES</span>
+          </p>
+          <h1 class="title">
+            We have Amazing <span class="purple">Service.</span>
+          </h1>
+          <p class="title--para features__title--para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="features__list">
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/shield-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">Secure</h2>
+                <p class="features__description--para">
+                  We strictly only deal with vendors that provide top notch
+                  security.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/support-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">24/7 Support</h2>
+                <p class="features__description--para">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/customize-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">Customizable</h2>
+                <p class="features__description--para">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/reliable-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">Reliable</h2>
+                <p class="features__description--para">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/fast-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">Fast</h2>
+                <p class="features__description--para">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+
+            <div class="features__list--wrapper">
+              <figure class="features__list--img">
+                <img
+                  class="features__list--icon"
+                  src="./assets/simple-icon.svg"
+                  alt=""
+                />
+              </figure>
+              <div class="features__list--description">
+                <h2 class="features__description--title">Easy</h2>
+                <p class="features__description--para">
+                  Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+                  quis nostrud.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quality">
+      <div class="row">
+        <div class="quality__container">
+          <div class="quality__left">
+            <p class="title--header">
+              <span class="purple">QUALITY WORK</span>
+            </p>
+            <h1 class="title">
+              Designed & Developed by <span class="purple">Professionals.</span>
+            </h1>
+            <p class="title--para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="quality__button--learn">
+              <strong>Learn More</strong>
+            </button>
+          </div>
+
+          <figure class="quality__img">
+            <img src="/assets/Quality.png" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="start">
+      <div class="row">
+        <div class="start__container">
+          <figure class="start__img">
+            <img src="/assets/start.png" alt="" />
+          </figure>
+
+          <div class="start__right">
+            <p class="title--header">
+              <span class="purple">STEPS</span>
+            </p>
+            <h1 class="title">
+              Easy to <span class="purple">Get Started.</span>
+            </h1>
+
+            <ul class="start__list">
+              <li class="start__register">
+                <h1 class="start__step">01</h1>
+
+                <div class="register__step">
+                  <h2 class="register__title">Register</h2>
+                  <p class="register__para">
+                    Create an account with us using Google or Facebook.
+                  </p>
+                </div>
+              </li>
+
+              <li class="start__register">
+                <h1 class="start__step">02</h1>
+
+                <div class="register__step">
+                  <h2 class="register__title">Download</h2>
+                  <p class="register__para">
+                    Browse and Download the template that you like from the
+                    marketplace.
+                  </p>
+                </div>
+              </li>
+
+              <li class="start__register">
+                <h1 class="start__step">03</h1>
+
+                <div class="register__step">
+                  <h2 class="register__title">Run</h2>
+                  <p class="register__para">
+                    Follow the instructions to setup and customize the template
+                    to your needs.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="value">
+      <div class="row">
+        <div class="value__container">
+          <div class="value__left">
+            <p class="title--header">
+              <span class="purple">VALUES</span>
+            </p>
+            <h1 class="title">
+              We Always Abide by Our <span class="purple">Principles.</span>
+            </h1>
+            <p class="title--para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="value__wrapper">
+              <div class="value__wrapper--group">
+                
+                <div class="value__wrapper--title">
+                  <svg
+                    class="feather feather-dollar-sign"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="green"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path
+                      d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    ></path>
+                  </svg>
+
+                  <h2 class="value__description--title">Affordable</h2>
+
+                </div>
+                <p class="value__description--para">
+                  We promise to offer you the best rate we can - at par with the
+                  industry standard.
+                </p>
+              </div>
+
+              <div class="value__wrapper--group">
+                
+                <div class="value__wrapper--title">
+                  <svg class="feather feather-briefcase" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  <h2 class="value__description--title">Professionalism</h2>
+                </div>
+                <p class="value__description--para">
+                    We assure you that our templates are designed and created by professional designers.
+                </p>
+              </div>
+            </div>
+
+            <button class="value__button--learn">
+              <strong>Learn More</strong>
+            </button>
+          </div>
+
+          <figure class="value__img">
+            <img src="/assets/values.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+        <div class="row">
+            <div class="pricing__container">
+                <p class="title--header">
+                    <span class="purple">PRICING</span>
+                  </p>
+                  <h1 class="title">
+                    Reasonable & Flexible <span class="purple">Plans.</span>
+                  </h1>
+                  <p class="title--para">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+            </div>
+        </div>
+    </section>
+
   </body>
 </html>
