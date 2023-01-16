@@ -13,7 +13,7 @@
     <script src=""></script>
   </head>
   <body>
-    <section class="landing">
+    <section id="landing">
       <nav class="row">
         <div class="nav__container">
           <figure class="nav__img">
@@ -28,7 +28,7 @@
             <a class="nav__link" href="">Contact Us</a>
             <a class="nav__link nav__link--primary" href="">Login</a>
             <a class="nav__link nav__link--signup" href=""
-              ><button><strong>Sign Up</strong></button></a
+              ><button class="button--purple"><strong>Sign Up</strong></button></a
             >
           </div>
         </div>
@@ -52,7 +52,7 @@
                   type="email"
                   placeholder="Your E-mail Address"
                 />
-                <button><strong>Get Started</strong></button>
+                <button class="button--purple"><strong>Get Started</strong></button>
               </form>
             </div>
 
@@ -212,7 +212,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <button class="quality__button--learn">
+            <button class="quality__button--learn button--purple">
               <strong>Learn More</strong>
             </button>
           </div>
@@ -299,7 +299,6 @@
 
             <div class="value__wrapper">
               <div class="value__wrapper--group">
-                
                 <div class="value__wrapper--title">
                   <svg
                     class="feather feather-dollar-sign"
@@ -320,7 +319,6 @@
                   </svg>
 
                   <h2 class="value__description--title">Affordable</h2>
-
                 </div>
                 <p class="value__description--para">
                   We promise to offer you the best rate we can - at par with the
@@ -329,18 +327,39 @@
               </div>
 
               <div class="value__wrapper--group">
-                
                 <div class="value__wrapper--title">
-                  <svg class="feather feather-briefcase" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  <svg
+                    class="feather feather-briefcase"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="red"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect
+                      x="2"
+                      y="7"
+                      width="20"
+                      height="14"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
                   <h2 class="value__description--title">Professionalism</h2>
                 </div>
                 <p class="value__description--para">
-                    We assure you that our templates are designed and created by professional designers.
+                  We assure you that our templates are designed and created by
+                  professional designers.
                 </p>
               </div>
             </div>
 
-            <button class="value__button--learn">
+            <button class="value__button--learn button--purple">
               <strong>Learn More</strong>
             </button>
           </div>
@@ -353,20 +372,255 @@
     </section>
 
     <section id="pricing">
+      <div class="row">
+        <div class="pricing__container">
+          <p class="title--header">
+            <span class="purple">PRICING</span>
+          </p>
+          <h1 class="title">
+            Reasonable & Flexible <span class="purple">Plans.</span>
+          </h1>
+          <p class="title--para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="pricing__plan">
+
+            <div class="pricing__plan--personal">
+                <div class="pricing__border green">
+                </div>
+
+                <div class="pricing__plan--box">
+                    <h1 class="pricing__plan--title">PERSONAL</h1>
+                    <h1 class="pricing__plan--price">$17.99</h1>
+                    <h2 class="pricing__plan--duration">MONTHLY</h2>
+                </div>
+    
+                <div class="pricing__plan--description">
+                    <h1 class="pricing__plan--title plan__title">For Individuals</h1>
+                    <h2 class="plan__option">30 Templates</h2>
+                    <h2 class="plan__option">7 Landing Pages</h2>
+                    <h2 class="plan__option">12 Internal Pages</h2>
+                    <h2 class="plan__option">Basic Assistance</h2>
+                </div>
+
+              <div class="pricing__plan--button">
+                <button class="green"><strong>BUY NOW</strong></button>
+              </div>
+
+            </div>
+
+            <div class="pricing__plan--personal">
+                <div class="pricing__border blue">
+                </div>
+
+                <div class="pricing__plan--box blue">
+                  <h1 class="pricing__plan--title white">BUSINESS</h1>
+                  <h1 class="pricing__plan--price white">$37.99</h1>
+                  <h2 class="pricing__plan--duration white">MONTHLY</h2>
+                </div>
+  
+                <div class="pricing__plan--description blue white">
+                  <h1 class="pricing__plan--title plan__title">For Small Businesses</h1>
+                  <h2 class="plan__option white">60 Templates</h2>
+                  <h2 class="plan__option white">15 Landing Pages</h2>
+                  <h2 class="plan__option white">22 Internal Pages</h2>
+                  <h2 class="plan__option white">Priority Assistance</h2>
+                </div>
+  
+                <div class="pricing__plan--button blue">
+                  <button class="white--background"><strong>BUY NOW</strong></button>
+                </div>
+  
+              </div>
+
+              <div class="pricing__plan--personal">
+                <div class="pricing__border red">
+                </div>
+
+                <div class="pricing__plan--box">
+                  <h1 class="pricing__plan--title">ENTERPRISE</h1>
+                  <h1 class="pricing__plan--price">$57.99</h1>
+                  <h2 class="pricing__plan--duration">MONTHLY</h2>
+                </div>
+  
+                <div class="pricing__plan--description">
+                  <h1 class="pricing__plan--title plan__title">For Large Companies</h1>
+                  <h2 class="plan__option">90 Templates</h2>
+                  <h2 class="plan__option">27 Landing Pages</h2>
+                  <h2 class="plan__option">37 Internal Pages</h2>
+                  <h2 class="plan__option">Personal Assistance</h2>
+                </div>
+  
+                <div class="pricing__plan--button">
+                  <button class="red"><strong>BUY NOW</strong></button>
+                </div>
+  
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="testimonials">
         <div class="row">
-            <div class="pricing__container">
+            <div class="testimonials__container">
+                <figure class="testimonial__img--wrapper">
+                    <img src="./assets/love.svg" alt="">
+                </figure>
+            
+                <div class="testimonial__right">
+            
+                    <p class="title--header">
+                        <span class="purple">TESTIMONIALS</span>
+                    </p>
+                    <h1 class="title">
+                        Our Clients <span class="purple">Love Us.</span>
+                    </h1>
+                    <p class="title--para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua enim ad minim veniam.
+                    </p>
+            
+                    <div class="user__experience">
+            
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+            
+                        <h1 class="user--title">Amazing User Experience</h1>
+                        <p class="features__description--para user--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Beatae, provident. Earum eaque ex, quae dolore totam ratione porro laudantium eum vitae enim nulla
+                            ipsam,
+                            harum recusandae pariatur veritatis. Ipsum, a!</p>
+                    </div>
+                    <div class="user__profile">
+                        <figure class="user__profile--img">
+                            <img src="/assets/photo.jpg" alt="">
+                        </figure>
+                        <div class="user__profile--name">
+                            <h1 class="user--title">Charlotte Hale</h1>
+                            <p class="user--para">Director, Delos Inc.</p>
+                        </div>
+                    </div>
+
+                
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="faqs">
+        <div class="row">
+            <div class="faqs__container">
                 <p class="title--header">
-                    <span class="purple">PRICING</span>
-                  </p>
-                  <h1 class="title">
-                    Reasonable & Flexible <span class="purple">Plans.</span>
-                  </h1>
-                  <p class="title--para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                    <span class="purple">FAQS</span>
+                </p>
+                <h1 class="title">
+                    You have <span class="purple">Questions?</span>
+                </h1>
+                <p class="title--para">
+                    And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
             </div>
         </div>
     </section>
 
-  </body>
+    <section id="getstarted">
+        <div class="row getstart__row">
+            <div class="getstart__container">
+                <h1 class="getstart__title white">Developers all over the world are happily using Treact.</h1>
+                <div class="getstart__button">
+                    <button class="getstart__button--start">Get Started</button>
+                    <button class="getstart__button--contact">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+
+  <footer id="footer">
+    <div class="row">
+        <div class="footer__links white">
+            <div class="footer__links--wrapper">
+                <h1>MAIN</h1>
+                <ul>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>FAQs</li></a>
+                    <a href="#"><li>Support</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </ul>
+            </div>
+
+            <div class="footer__links--wrapper">
+                <h1>PRODUCT</h1>
+                <ul>
+                    <a href="#"><li>Log In</li></a>
+                    <a href="#"><li>Personal</li></a>
+                    <a href="#"><li>Business</li></a>
+                    <a href="#"><li>Team</li></a>
+                </ul>
+            </div>
+
+            <div class="footer__links--wrapper">
+                <h1>Press</h1>
+                <ul>
+                    <a href="#"><li>Logos</li></a>
+                    <a href="#"><li>Events</li></a>
+                    <a href="#"><li>Stories</li></a>
+                    <a href="#"><li>Office</li></a>
+                </ul>
+            </div>
+
+            <div class="footer__links--wrapper">
+                <h1>TEAM</h1>
+                <ul>
+                    <a href="#"><li>Career</li></a>
+                    <a href="#"><li>Founders</li></a>
+                    <a href="#"><li>Culture</li></a>
+                    <a href="#"><li>Onboarding</li></a>
+                </ul>
+            </div>
+
+            <div class="footer__links--wrapper">
+                <h1>LEGAL</h1>
+                <ul>
+                    <a href="#"><li>GDPR</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>Terms of Service</li></a>
+                    <a href="#"><li>Disclaimer</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__line"></div>
+
+        <div class="footer__social">
+
+            <div class="footer__logo">
+            <figure class="footer__img">
+                <img class="footer__img--logo" src="./assets/logo-light.svg" alt="" />
+            </figure>
+                <h1 class="footer__main white" href="#">Treact Inc.</h1>
+            </div>
+
+            <p class="white">© 2018 Treact Inc. All Rights Reserved.</p>
+
+            <div class="footer__social--link">
+              <a href="">FB</a>
+              <a href="">TW</a>
+              <a href="">YT</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
 </html>
