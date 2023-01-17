@@ -10,9 +10,11 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="./index.js"></script>
   </head>
   <body>
+
+    <!-- NAVIGATION  -->
     <section id="landing">
       <nav class="row">
         <div class="nav__container">
@@ -22,17 +24,56 @@
           </figure>
 
           <div class="nav__links">
-            <a class="nav__link" href="">About</a>
-            <a class="nav__link" href="">Blog</a>
-            <a class="nav__link" href="">Pricing</a>
-            <a class="nav__link" href="">Contact Us</a>
-            <a class="nav__link nav__link--primary" href="">Login</a>
+            <a class="nav__link link__hover-effect" href="">About</a>
+            <a class="nav__link link__hover-effect" href="">Blog</a>
+            <a class="nav__link link__hover-effect" href="">Pricing</a>
+            <a class="nav__link link__hover-effect" href="">Contact Us</a>
+            <a class="nav__link nav__link--primary link__hover-effect" href="">Login</a>
             <a class="nav__link nav__link--signup" href=""
               ><button class="button--purple"><strong>Sign Up</strong></button></a
             >
           </div>
+
+          <!-- BURGER MENU -->
+
+        <button class="btn__menu" onclick="openMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledMenuIcon-sc-lj69nl-15 bPlZcF"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-sc-lj69nl-14 brSrPp"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+
+            <ul class="menu__links">
+                <li>
+                    <a href="#" class="menu__list link__hover-effect" onclick="closeMenu()">About</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__list link__hover-effect" onclick="closeMenu()">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__list link__hover-effect" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__list link__hover-effect" onclick="closeMenu()">Contact us</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__list link__hover-effect " onclick="closeMenu()">Login</a>
+                </li>
+                <li>
+                    <button class="button--purple"><a href="#" class="menu__list white" onclick="closeMenu()">Sign Up</a></button>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+
         </div>
       </nav>
+      
+      <!-- HEADER SECTION -->
 
       <header class="row">
         <div class="header__container">
@@ -74,6 +115,8 @@
         </div>
       </header>
     </section>
+
+    <!-- FEATURES  -->
 
     <section id="features">
       <div class="row">
@@ -196,6 +239,8 @@
       </div>
     </section>
 
+    <!-- QUALITY  -->
+
     <section id="quality">
       <div class="row">
         <div class="quality__container">
@@ -218,17 +263,19 @@
           </div>
 
           <figure class="quality__img">
-            <img src="/assets/Quality.png" alt="" />
+            <img src="./assets/Quality.png" alt="" />
           </figure>
         </div>
       </div>
     </section>
 
+    <!-- START  -->
+
     <section id="start">
       <div class="row">
         <div class="start__container">
           <figure class="start__img">
-            <img src="/assets/start.png" alt="" />
+            <img src="./assets/start.png" alt="" />
           </figure>
 
           <div class="start__right">
@@ -279,6 +326,8 @@
         </div>
       </div>
     </section>
+
+    <!-- VALUE  -->
 
     <section id="value">
       <div class="row">
@@ -365,11 +414,13 @@
           </div>
 
           <figure class="value__img">
-            <img src="/assets/values.svg" alt="" />
+            <img src="./assets/values.svg" alt="" />
           </figure>
         </div>
       </div>
     </section>
+
+    <!-- PRICING  -->
 
     <section id="pricing">
       <div class="row">
@@ -467,6 +518,8 @@
 
     </section>
 
+    <!-- TESTIMONIALS  -->
+
     <section id="testimonials">
         <div class="row">
             <div class="testimonials__container">
@@ -503,7 +556,7 @@
                     </div>
                     <div class="user__profile">
                         <figure class="user__profile--img">
-                            <img src="/assets/photo.jpg" alt="">
+                            <img src="./assets/photo.jpg" alt="">
                         </figure>
                         <div class="user__profile--name">
                             <h1 class="user--title">Charlotte Hale</h1>
@@ -517,6 +570,8 @@
             </div>
         </div>
     </section>
+
+    <!-- FAQS  -->
     
     <section id="faqs">
         <div class="row">
@@ -547,56 +602,58 @@
     </section>
     </body>
 
+    <!-- FOOTER  -->
+
   <footer id="footer">
     <div class="row">
         <div class="footer__links white">
             <div class="footer__links--wrapper">
-                <h1>MAIN</h1>
+                <h1 class="footer__links--title">MAIN</h1>
                 <ul>
-                    <a href="#"><li>Blog</li></a>
-                    <a href="#"><li>FAQs</li></a>
-                    <a href="#"><li>Support</li></a>
-                    <a href="#"><li>About Us</li></a>
+                    <li><a class="link__hover-effect" href="#">Blog</a></li>
+                    <li><a class="link__hover-effect" href="#">FAQs</a></li>
+                    <li><a class="link__hover-effect" href="#">Support</a></li>
+                    <li><a class="link__hover-effect" href="#">About Us</a></li>
                 </ul>
             </div>
 
             <div class="footer__links--wrapper">
-                <h1>PRODUCT</h1>
+                <h1 class="footer__links--title">PRODUCT</h1>
                 <ul>
-                    <a href="#"><li>Log In</li></a>
-                    <a href="#"><li>Personal</li></a>
-                    <a href="#"><li>Business</li></a>
-                    <a href="#"><li>Team</li></a>
+                    <li><a class="link__hover-effect" href="#">Log In</a></li>
+                    <li><a class="link__hover-effect" href="#">Personal</a></li>
+                    <li><a class="link__hover-effect" href="#">Business</a></li>
+                    <li><a class="link__hover-effect" href="#">Team</a></li>
                 </ul>
             </div>
 
             <div class="footer__links--wrapper">
-                <h1>Press</h1>
+                <h1 class="footer__links--title">Press</h1>
                 <ul>
-                    <a href="#"><li>Logos</li></a>
-                    <a href="#"><li>Events</li></a>
-                    <a href="#"><li>Stories</li></a>
-                    <a href="#"><li>Office</li></a>
+                    <li><a class="link__hover-effect" href="#">Logos</a></li>
+                    <li><a class="link__hover-effect" href="#">Event</a></li>
+                    <li><a class="link__hover-effect" href="#">Stories</a></li>
+                    <li><a class="link__hover-effect" href="#">Office</a></li>
                 </ul>
             </div>
 
             <div class="footer__links--wrapper">
-                <h1>TEAM</h1>
+                <h1 class="footer__links--title">TEAM</h1>
                 <ul>
-                    <a href="#"><li>Career</li></a>
-                    <a href="#"><li>Founders</li></a>
-                    <a href="#"><li>Culture</li></a>
-                    <a href="#"><li>Onboarding</li></a>
+                    <li><a class="link__hover-effect" href="#">Career</a></li>
+                    <li><a class="link__hover-effect" href="#">Founders</a></li>
+                    <li><a class="link__hover-effect" href="#">Culture</a></li>
+                    <li><a class="link__hover-effect" href="#">Onboarding</a></li>
                 </ul>
             </div>
 
             <div class="footer__links--wrapper">
-                <h1>LEGAL</h1>
+                <h1 class="footer__links--title">LEGAL</h1>
                 <ul>
-                    <a href="#"><li>GDPR</li></a>
-                    <a href="#"><li>Privacy Policy</li></a>
-                    <a href="#"><li>Terms of Service</li></a>
-                    <a href="#"><li>Disclaimer</li></a>
+                    <li><a class="link__hover-effect" href="#">GDPR</a></li>
+                    <li><a class="link__hover-effect" href="#">Privacy Policy</a></li>
+                    <li><a class="link__hover-effect" href="#">Terms of Service</a></li>
+                    <li><a class="link__hover-effect" href="#">Disclaimer</a></li>
                 </ul>
             </div>
         </div>
@@ -609,10 +666,10 @@
             <figure class="footer__img">
                 <img class="footer__img--logo" src="./assets/logo-light.svg" alt="" />
             </figure>
-                <h1 class="footer__main white" href="#">Treact Inc.</h1>
+            <h1 class="footer__main white" href="#">Treact Inc.</h1>
             </div>
 
-            <p class="white">© 2018 Treact Inc. All Rights Reserved.</p>
+            <p class="white">© 2023 Treact Inc. All Rights Reserved.</p>
 
             <div class="footer__social--link">
               <a href="">FB</a>
